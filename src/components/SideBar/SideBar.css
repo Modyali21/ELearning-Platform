@@ -1,0 +1,74 @@
+.wrapper .sidebar{
+    background: rgb(248 249 250);
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+.system-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.system-image img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    
+}
+.system-image h2{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    font-size: 30px;
+    color: rgb(188, 90, 106); 
+}
+.wrapper .sidebar ul{
+    padding: 0;
+}
+.wrapper .sidebar ul li{
+
+    list-style: none;
+}
+.wrapper .sidebar ul li a{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: rgb(52 58 64);
+}
+.wrapper .sidebar ul li a .icon{
+    padding-right: 10px;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #ffffff;
+    background-color: rgba(188, 90, 106, 0.477); 
+    border-right: 10px solid #974005;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #fcfcfc;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+@media (max-width:1393px){
+    
+    .profile-page{
+        width: 100%;
+    }
+    .wrapper .sidebar{
+        
+        display: none;
+        
+    }
+}

@@ -1,12 +1,22 @@
 import './App.css';
-import { Signup } from './components/Signup';
-import {BroweserRouter as Router,Route,Routes} from "react-router-dom"
-import {ProfileImage} from  "./components/ProfileImage"
+import {ProfilePage,ProfileImage, Header,Container,SuggestedCourses,UserInfo,SideBar,EnrolledCourses,MutualFriends,EnrolledCP} from "./components/index"
 function App() {
   return (
     <>
-      <Signup />
-      {/* <ProfileImage/> */}
+      
+      <ProfilePage>
+        <Header/>
+        <SideBar/>
+        <Container>
+          <ProfileImage/>
+          <UserInfo/>
+          <EnrolledCP>
+            <EnrolledCourses/>
+            <MutualFriends/>
+          </EnrolledCP>
+          <SuggestedCourses/>
+        </Container>
+      </ProfilePage>
     </>
   );
 }
